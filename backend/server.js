@@ -21,7 +21,11 @@ require("./config/passportGoogle"); // No (passport) here
 const app = express();
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://lief-clock-app.onrender.com"], 
+  origin: [
+    "http://localhost:5173", 
+    "https://lief-clock-app.onrender.com",  // backend itself
+    "https://lief-clock-app.vercel.app"     // frontend on Vercel
+  ],
   credentials: true
 }));
 
