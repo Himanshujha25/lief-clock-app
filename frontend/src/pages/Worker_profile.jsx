@@ -16,7 +16,7 @@ export default function WorkerProfile() {
       return;
     }
 
-    fetch("http://localhost:5000/api/profile", {
+    fetch("https://lief-clock-app.onrender.com/api/profile", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token}`,

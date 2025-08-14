@@ -13,9 +13,9 @@ export default function OAuthSuccess() {
       const decoded = JSON.parse(atob(token.split(".")[1]));
 
       if (decoded.role === "manager") {
-        navigate("/manager-dashboard");
+        navigate("/manager/dashboard");
       } else if (decoded.role === "worker") {
-        navigate("/worker-dashboard");
+        navigate("/worker/dashboard");
       } else {
         navigate("/login");
       }

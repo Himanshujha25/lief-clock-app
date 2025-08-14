@@ -10,7 +10,7 @@ const onFinish = async (values) => {
   console.log("Login Submitted:", values);
 
   try {
-    const response = await axios.post("http://localhost:5000/api/auth/login", values);
+    const response = await axios.post("https://lief-clock-app.onrender.com/api/auth/login", values);
     
     // Example: store token in localStorage
     localStorage.setItem("token", response.data.token);
@@ -36,7 +36,7 @@ const onFinish = async (values) => {
 
 
   const handleGoogleLogin = () => {
-    window.location.href = "http://localhost:5000/auth/google";
+    window.location.href = "https://lief-clock-app.onrender.com/auth/google";
   };
 
   return (

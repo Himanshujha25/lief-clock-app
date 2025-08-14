@@ -30,7 +30,7 @@ export default function ManagerAttendance() {
 
   setLoading(true);
   try {
-    const res = await fetch(`http://localhost:5000/api/manager/workers?email=${encodeURIComponent(email)}`, {
+    const res = await fetch(`https://lief-clock-app.onrender.com/api/manager/workers?email=${encodeURIComponent(email)}`, {
   headers: {
     Authorization: `Bearer ${localStorage.getItem("token")}`
   }

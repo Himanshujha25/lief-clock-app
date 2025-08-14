@@ -35,7 +35,7 @@ export default function ManagerOverview() {
     const fetchOverview = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:5000/api/manager/overview", {
+        const res = await axios.get("https://lief-clock-app.onrender.com/api/manager/overview", {
           headers: { Authorization: `Bearer ${token}` }
         });
         setOverviewData(res.data);

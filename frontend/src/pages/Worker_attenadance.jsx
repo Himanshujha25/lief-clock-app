@@ -15,7 +15,7 @@ export default function WorkerAttendance() {
       return;
     }
 
-    fetch("http://localhost:5000/api/my-attendance", {
+    fetch("https://lief-clock-app.onrender.com/api/my-attendance", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -28,7 +28,7 @@ export default function SetLocation() {
           const token = localStorage.getItem("token"); // Manager's JWT
 
           await axios.post(
-            "http://localhost:5000/api/manager/set-location",
+            "https://lief-clock-app.onrender.com/api/manager/set-location",
             { latitude, longitude, radius },
             { headers: { Authorization: `Bearer ${token}` } }
           );

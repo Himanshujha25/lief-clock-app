@@ -14,7 +14,7 @@ export default function ManagerWorkers() {
     try {
       setLoading(true);
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/manager/users", {
+      const res = await axios.get("https://lief-clock-app.onrender.com/api/manager/users", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

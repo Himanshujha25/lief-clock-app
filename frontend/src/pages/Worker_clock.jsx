@@ -102,7 +102,7 @@ export default function ClockInOut() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "http://localhost:5000/api/clock/clock-out",
+        "https://lief-clock-app.onrender.com/api/clock/clock-out",
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );

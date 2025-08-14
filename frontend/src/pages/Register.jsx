@@ -15,7 +15,7 @@ export default function Register() {
   console.log("Register Submitted:", values);
 
   try {
-    const response = await axios.post("http://localhost:5000/api/auth/register", values);
+    const response = await axios.post("https://lief-clock-app.onrender.com/api/auth/register", values);
 
     message.success(response.data.message);
 
