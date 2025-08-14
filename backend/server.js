@@ -43,7 +43,7 @@ app.get(
       process.env.JWT_SECRET,
       { expiresIn: "7d" }
     );
-    res.redirect(`http://localhost:5173/oauth-success?token=${token}`);
+    res.redirect(`https://lief-clock-app.vercel.app/oauth-success?token=${token}`);
   }
 );
 
